@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-color: #E2BFD9;
+  --secondary-color: #F7EFE5;
+  --tertiary-color: black;
+  --quaternary-color:#674188;
+  --main-font-family: "Krona One", system-ui;
+  --secondary-font-family: "Roboto Mono", monospace;
+}
+
+header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.tituloPagina {
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.negrita {
+  color: var(--quaternary-color);
+}
+
+body {
+  background-color: var(--main-color);
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 200px;
+}
+
+.texto {
+  resize: none;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  background: var(--secondary-color);
+  padding-top: 20px;
+  border-radius: 20px;
+  text-transform: lowercase;
+  width: 400px;
+  height: 300px;
+}
+
+::placeholder {
+  color: var(--tertiary-color);
+}
+.texto:focus {
+  outline: none;
+}
+
+.botones__container {
+  display: flex;
+  gap: 80px;
+  width: 400px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.botonEncriptar {
+  background: url(/assets/candado-cerrado.png);
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.botonDesencriptar {
+  background: url(/assets/candado-abierto.png);
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.mostrar__texto {
+  resize: none;
+  background-image: url("/assets/Muñeco.png");
+  background-repeat: no-repeat;
+  background-color: var(--secondary-color);
+  background-position: center;
+  background-size: contain;
+  color: var(--tertiary-color);  
+  width: 400px;
+  height: 300px;
+  margin-top: 20px;
+  padding-top: 20px;
+  text-align: center;
+  border-radius: 20px;
+  cursor:not-allowed;
+}
+
+::placeholder {
+  color: var(--tertiary-color);
+}
+.mostrar__texto:focus {
+  outline: none;
+}
+
+.copiar__container {
+  margin-top: 20px;
+  width: 400px;
+  display: flex;
+  justify-content: end;
+}
+
+.copiar {
+  background: url(/assets/copia.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+.div__logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.logos {
+  width: 70px;
+  height: auto;
+  border-radius: 5%;
+}
+
+footer {
+  padding-top: 10px;
+  text-align: center;
+  font-family: var(--secondary-font-family);
+  padding: 30px;
+  font-family: 400;
+  font-size: 1.25rem;
+  color: var(--tertiary-color);
+}
+
+.texto__footer {
+  margin-top: 20px;
+}
+
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 600px) {
+  header {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .tituloPagina {
+    font-size: 1.2rem;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+
+  .texto {
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .botones__container {
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .botonEncriptar,
+  .botonDesencriptar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mostrar__texto {
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .copiar__container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .copiar {
+    width: 40px;
+    height: 30px;
+  }
+
+  .div__logos {
+    flex-direction:column;  
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logos {
+    width: 50px;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding: 20px;
+  }
+}
+
+
