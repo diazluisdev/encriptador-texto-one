@@ -18,7 +18,7 @@
 ## Cómo Usar
 
 1. **Clona este repositorio**:
-   git clone https://github.com/tu_usuario/encriptador-desencriptador.git
+   git clone [GitHub](https://github.com/diazluisdev/encriptador-texto-one)
 
 2. **Navega al directorio del proyecto**:
 cd encriptador-desencriptador
